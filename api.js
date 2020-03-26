@@ -6,68 +6,10 @@ const config = require("config")
 const {check, validationResult} = require("express-validator")
 const User = require("./user")
 
-// router.get("/muggers", (req, res)=>{
-//   Mugger.find({})
-//     .then(mugger => {
-//       res.send(mugger);
-//     });
-// });
-
-// router.post("/muggers", (req, res)=>{
-//   Mugger.create(req.body)
-//     .then(mugger => {
-//       res.send(mugger);
-//     });
-// });
-//
-// router.put("/muggers/:id", (req, res)=>{
-//   Mugger.findByIdAndUpdate({_id: req.params.id}, req.body)
-//     .then(() => {
-//       Mugger.findOne({_id: req.params.id})
-//         .then(mugger => {
-//           res.send(mugger);
-//         });
-//     });
-// });
-//
-// router.delete("/muggers/:id", (req, res)=>{
-//   Mugger.deleteOne({_id: req.params.id})
-//     .then(mugger => {
-//       res.send(mugger);
-//     });
-// });
-
-// router.post("/userCreater", (req, res)=>{
-//     debugger
-//   User.create(req.body)
-//     .then(DataUserRegistration => {
-//       res.send(DataUserRegistration);
-//     });
-// });
-
-
 router.post(
     '/registration',
     [
-        // check("first_name","Минимальная длина 1 символ").isLength({
-        //     min:1
-        // }),
-        // check("last_name","Минимальная длина 1 символ").isLength({
-        //     min:1
-        // }),
-        // check("email","Некорректный email").isEmail(),
-        // check("password","Минимальная длина 1 символ").isLength({
-        //     min:1
-        // }),
-        // check("phone","Минимальная длина 1 символ").isLength({
-        //     min:1
-        // }),
-        // check("city","Минимальная длина 1 символ").isLength({
-        //     min:1
-        // }),
-        // check("password","Минимальная длина 1 символ").isLength({
-        //     min:1
-        // }),
+
     ],
     async (req, res, next) => {
 
@@ -120,13 +62,7 @@ router.post(
     // }),
     async (req, res) => {
         try {
-            // const errors = validationResult(req)
-            // if(errors.isEmpty()) {
-            //     return res.status(400).json({
-            //         errors:errors.array(),
-            //         message:"Некорректные данные при входе"
-            //     })
-            // }
+
 
             const {email, password} = req.body
             const user = await User.findOne({email})
@@ -163,8 +99,6 @@ console.log(user)
         }
 
 
-// req.session.isAuthenticated = true
-//     console.log(req.session)
     })
 
 router.post('/addCategoriesImg', [], async (req, res, next) => {
