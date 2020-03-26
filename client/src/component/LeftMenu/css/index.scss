@@ -1,0 +1,19 @@
+.LeftMenu {
+  height: 500px;
+  border-bottom: #cccccc 2px solid ;
+  position: relative;
+  z-index: 91;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.09), 0 10px 10px rgba(0, 0, 0, 0.09);
+  padding: 50px 0;
+  text-align: center;
+  width: 200px;
+  a {
+    padding: 10px;
+    font-size: 18px;
+    color: black;
+  }
+  &-block {
+    display: flex;
+    flex-direction: column;
+  }
+}

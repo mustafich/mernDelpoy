@@ -1,0 +1,11 @@
+.logint {
+  display: flex;
+  flex-direction: column; }
+  .logint h3 {
+    font-size: 32px; }
+  .logint h2 {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 28px; }
+
+/*# sourceMappingURL=index.css.map */

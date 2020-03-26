@@ -1,0 +1,60 @@
+.DetailedImg {
+  width: 100%; }
+  .DetailedImg-block_name {
+    font-size: 28px; }
+  .DetailedImg-block_box {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex; }
+    .DetailedImg-block_box__img {
+      margin: 20px;
+      border: 2px solid grey;
+      width: 680px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .DetailedImg-block_box__img p {
+        cursor: pointer;
+        height: 450px;
+        font-size: 240px; }
+  .DetailedImg-popUp {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: #000;
+    background-color: rgba(0, 0, 0, 0.4); }
+    .DetailedImg-popUp_block {
+      border: 3px solid grey;
+      border-radius: 20px;
+      background: white;
+      position: absolute;
+      width: 800px;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column; }
+      .DetailedImg-popUp_block p {
+        margin: 20px;
+        padding: 10px;
+        font-size: 22px; }
+      .DetailedImg-popUp_block button {
+        margin: 20px;
+        font-size: 24px;
+        padding: 10px;
+        border: 2px solid grey;
+        border-radius: 10px; }
+      .DetailedImg-popUp_block__close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        font-size: 40px; }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,21 @@
+.profile {
+  
+  padding: 1px;
+display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  &-block {
+    width: 404px;
+    border: 2px solid grey;
+    &_img {
+    width: 400px;
+    }
+    &_info {
+      font-size: 18px;
+      padding: 10px;
+      &__text {
+        display: flex;
+      }
+    }
+  }
+}

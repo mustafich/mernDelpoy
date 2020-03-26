@@ -1,0 +1,36 @@
+.userAll {
+  width: 100%;
+  &-block {
+
+    display: flex;
+    flex-wrap: wrap;
+    &:last-child {
+      margin: 30px;
+    }
+    &_box {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 10px;
+      font-size: 20px;
+      border-radius: 2px;
+      border: 2px solid grey;
+      width: 200px;
+      height: 250px;
+      &__name {
+        height: 100%;
+       display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+
+        }
+      }
+      &__photo {
+
+      }
+    }
+  }
+}
+
+
