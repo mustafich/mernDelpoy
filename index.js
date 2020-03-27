@@ -7,6 +7,7 @@ const flash = require("connect-flash")
 const varMiddleware = require("./middleware/variables")
 const app = express();
 const path = require('path')
+const keys = require("./keys")
 
 app.use(express.json({extended:true}))
 const PORT = config.get("port") || 4000
@@ -25,7 +26,7 @@ if (process.env.NODE_ENV === 'production') {
 app.use(varMiddleware)
 app.use(flash())
 var cors = require('cors')
-mongoose.connect("mongodb://localhost/infoblog", { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false  });
+mongoose.connect(`mongodb://${keys.MONGODB_URI}/infoblog`, { useNewUrlParser: true, useUnifiedTopology: true,useFindAndModify: false  });
 app.use(cors())
 
 app.use(bodyParser.json());
