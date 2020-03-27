@@ -10,7 +10,7 @@ const path = require('path')
 const keys = require("./keys")
 
 app.use(express.json({extended:true}))
-const PORT = config.get("port") || 4000
+const PORT = config.get(process.env.PORT) || 4000
 app.use(session({
   secret:"some secre value",
   resave:false,
