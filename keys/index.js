@@ -1,4 +1,4 @@
 module.exports={
-MONGODB_URI:"https://limitless-stream-78278.herokuapp.com",
-    BASE_URL: "https://limitless-stream-78278.herokuapp.com"
+MONGODB_URI:"mongodb+srv://Vadim:svMnWqGYyaJWHAul@cluster0-0oksc.mongodb.net/infoblog",
+    BASE_URL: "mongodb+srv://Vadim:svMnWqGYyaJWHAul@cluster0-0oksc.mongodb.net/infoblog"
 }
